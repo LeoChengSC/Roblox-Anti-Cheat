@@ -1,0 +1,23 @@
+_G.KickReason = Anti-Cheat detected you are exploiting \n Please turn off your exploit and rejoin
+while wait(10) do
+    if game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed ~= 16 then
+        game.Players.LocalPlayer:Kick(KickReason)
+        else
+        print("WalkSpeed checked")
+    end
+    if game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower ~= 16 then
+        game.Players.LocalPlayer:Kick(KickReason)
+        else
+        print("JumpPower checked")
+    end
+    if game:GetService("Players").LocalPlayer.Character.Humanoid.Health ~= game:GetService("Players").LocalPlayer.Character.Humanoid.Health then
+        game.Players.LocalPlayer:Kick(KickReason)
+        else
+        print("Health checked")
+    end
+    if game:GetService("Players").LocalPlayer.Character.Humanoid.Health < -1 then
+        game.Players.LocalPlayer:Kick(KickReason)
+        else
+        print("God mode checked")
+    end
+end
